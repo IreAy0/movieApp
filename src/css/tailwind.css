@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+
+
+.movie{
+    @apply mx-3 my-3 overflow-hidden shadow-lg  rounded-lg bg-white	 w-60 cursor-pointer relative
+}
+
+.movie{
+    width: 300px;
+
+}
+.movie-info{
+    padding: 0.5rem 1rem 1rem;
+}
+.movie-info span{
+    background-color: #C0C1CE;
+}
+.movie-info span.orange{
+        @apply text-green-500;
+}
+.movie-info span.red{
+    color: orange;
+}
+.movie-info span.green{
+    @apply text-red-600 ;
+}
+.overview{
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0)
+}
+@tailwind utilities;
+
